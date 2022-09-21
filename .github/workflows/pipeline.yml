@@ -22,6 +22,4 @@ jobs:
         cf_api: https://api.cf.us10-001.hana.ondemand.com
         cf_username: ${{ secrets.CF_USER }}
         cf_password: ${{ secrets.CF_PASSWORD }}
-        cf_org: AwesomeApp
-        cf_space: Development
-        command: push -f manifest-dev.yml
+        command: apps
