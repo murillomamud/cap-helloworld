@@ -8,7 +8,9 @@ on:
 jobs:
   build:
     runs-on: ubuntu-18.04
-    # Build your app here
+    name: Setup
+    steps:
+      - uses: actions/checkout@v3
 
   deploy:
     runs-on: ubuntu-18.04
