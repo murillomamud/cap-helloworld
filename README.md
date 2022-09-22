@@ -1,25 +1,33 @@
-# Getting Started
+# Hello World - CAP deployed by Github Actions
 
-Welcome to your new project.
+## Action Project: 
+https://github.com/murillomamud/action-deploy-cap
 
-It contains these folders and files, following our recommended project layout:
-
-File or Folder | Purpose
----------|----------
-`app/` | content for UI frontends goes here
-`db/` | your domain models and data go here
-`srv/` | your service models and code go here
-`package.json` | project metadata and configuration
-`readme.md` | this getting started guide
+# Check application running:
+https://e51034c8trial-dev-helloworld-srv.cfapps.us10-001.hana.ondemand.com/say/hello(to='yourNAme')
 
 
-## Next Steps
+## Tips:
 
-- Open a new terminal and run `cds watch` 
-- (in VS Code simply choose _**Terminal** > Run Task > cds watch_)
-- Start adding content, for example, a [db/schema.cds](db/schema.cds).
+Add in you mta.yaml file:
 
+```
+build-parameters:
+  before-all:
+   - builder: custom
+     commands:
+      - npm install --production
+      - npx -p @sap/cds-dk cds build --production
+      - npx rimraf gen/db/src/gen/data
+```
 
 ## Learn More
 
-Learn more at https://cap.cloud.sap/docs/get-started/.
+Learn more at 
+- https://cap.cloud.sap/docs/get-started/.
+- https://developers.sap.com/tutorials/btp-app-cap-mta-deployment.html
+- https://cap.cloud.sap/docs/guides/deployment/to-cf#cf-cli
+- https://developers.sap.com/tutorials
+- https://github.com/Guerric-P/cf-cli-action
+- https://github.com/citizen-of-planet-earth/cf-cli-action
+
