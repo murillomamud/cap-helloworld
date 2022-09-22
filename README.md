@@ -10,7 +10,7 @@ https://e51034c8trial-dev-helloworld-srv.cfapps.us10-001.hana.ondemand.com/say/h
 
 ## Tips:
 
-Add in you mta.yaml file:
+Add in your mta.yaml file:
 ```
 build-parameters:
   before-all:
