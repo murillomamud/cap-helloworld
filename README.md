@@ -1,5 +1,6 @@
 # Hello World - CAP deployed by Github Actions
 
+<<<<<<< HEAD
 ## Action Project: 
 https://github.com/murillomamud/action-deploy-cap
 
@@ -11,6 +12,16 @@ https://e51034c8trial-dev-helloworld-srv.cfapps.us10-001.hana.ondemand.com/say/h
 
 Add in you mta.yaml file:
 
+=======
+# Check application running:
+https://e51034c8trial-dev-helloworld-srv.cfapps.us10-001.hana.ondemand.com/say/hello(to='yourNAme')
+
+
+## Tips:
+
+Add in you mta.yaml file:
+
+>>>>>>> d006c2369d50f7415954843648afd4ad2cb0169a
 ```
 build-parameters:
   before-all:
